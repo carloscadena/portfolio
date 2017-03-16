@@ -3,23 +3,20 @@ body {
 }
 
 h1 {
-  font-size: 50px;
+  font-size: 1.5em;
   display: inline-block;
-}
-
-img {
-  float: left;
-  width: 15%;
-  border-radius: 50%;
-  margin-left: 5em;
-  margin-bottom: 3px;
-  position: relative;
 }
 
 .header {
   border-bottom: 3px solid #eeeeee;
   margin-right: 20%;
   margin-left: 20%;
+  max-height: 100%;
+}
+
+img {
+  border-radius: 50%;
+  max-height: 100px;
 }
 
 ul {
@@ -50,4 +47,14 @@ a {
   margin-right: 20%;
   margin-left: 20%;
   margin-top: 10px;
+}
+
+@media only screen and (min-width: 600px) {
+    img  {
+      display: block;
+      float: left;
+      margin-left: 5em;
+      max-width: 15%;
+      max-height: 100px;
+    }
 }
