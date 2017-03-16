@@ -2,6 +2,8 @@
 
 function Portfolio (work) {
   this.title = work.title;
-  this.urlLink= work.urlLink;
+  this.url= work.url;
+  this.anImage = work.anImage
+  this.description = work.description;
   this.publishedOn = work.publishedOn;
 }
