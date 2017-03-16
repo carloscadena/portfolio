@@ -5,35 +5,30 @@ var rawData = [
     title: 'About Me',
     url: 'lsjdfasdf',
     description: 'ldksajflsdkjaga lsdkgja',
-    anImage: 'lskdjfaldksjfa',
-    publishedOn: '09238098'
+    publishedOn: '2000-01-07'
   },
   {
     title: 'Salmon Cookies',
     url: 'lsjdfasdf',
     description: 'ldksajflsdkjaga lsdkgja',
-    anImage: 'lskdjfaldksjfa',
-    publishedOn: '09238098'
+    publishedOn: '2000-01-08'
   },
   {
     title: 'Bus Mall',
     url: 'lsjdfasdf',
     description: 'ldksajflsdkjaga lsdkgja',
-    anImage: 'lskdjfaldksjfa',
-    publishedOn: '09238098'
+    publishedOn: '2000-01-09'
   },
   {
     title: 'Chocolate Cookies',
     url: 'lsjdfasdf',
     description: 'ldksajflsdkjaga lsdkgja',
-    anImage: 'lskdjfaldksjfa',
-    publishedOn: '09238098'
+    publishedOn: '2000-11-10'
   },
   {
     title: 'Textventure',
     url: 'lsjdfasdf',
     description: 'ldksajflsdkjaga lsdkgja',
-    anImage: 'lskdjfaldksjfa',
-    PublishedOn: '09238098'
+    PublishedOn: '2000-11-11'
   }
 ]

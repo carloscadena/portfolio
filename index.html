@@ -5,6 +5,7 @@
     <title>Carlos Cadena Portfolio</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="styles/style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
   </head>
   <body>
     <div class="header">
@@ -25,16 +26,21 @@
     </div>
     <div class="main-content two">
       <h3>My Projects</h3>
-      <article class="template" data-category="placeholder-category">
-          <header>
-            <h1>Title</h1>
-            <div class="byline">
-              published <time pubdate datetime="2000-01-01">Publish Time</time>
-            </div>
-          </header>
-          <section class="about-project"></section>
-          <a href="#" class="read-on">Show more &rarr;</a>
-        </article>
+
+      <!-- template -->
+      <section id="projects">
+        <article class="template" data-category="placeholder-category">
+            <header>
+              <a href="">Title</a>
+              <section class="about-project"></section>
+              <div class="published">
+                published <time pubdate datetime="2000-01-01">Publish Time</time>
+              </div>
+            </header>
+            <a href="#" class="show-more">Show more &rarr;</a>
+          </article>
+        </section>
+
     </div>
     <div class="main-content three">
       <h3>Previous Jobs</h3>
@@ -44,5 +50,8 @@
       <h3>Education</h3>
       <p>blah blah blah blah blah</p>
     </div>
+
+    <script src="scripts/rawdata.js" type="text/javascript"></script>
+    <script src="scripts/app.js" type="text/javascript"></script>
   </body>
 </html>
