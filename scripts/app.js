@@ -12,11 +12,9 @@ function Portfolio (work) {
 Portfolio.prototype.toHtml = function() {
   var $newProject = $('article.template').clone().removeClass('template');
 
-  $newProject.find('a').attr('href', this.url);
-  $newProject.find('a').text(this.title);
-  $newProject.find('.about-project').html(this.body);
-  $newProject.find('time[pubdate]').attr('datetime', this.publishedOn);
-  $newProject.find('time[pubdate]').attr('title', this.publishedOn);
+  $newProject.find('header a').attr('href', this.url);
+  $newProject.find('header a').text(this.title);
+  $newProject.find('.about-project').html(this.description);
   $newProject.find('time').text('about ' + parseInt((new Date() - new Date(this.publishedOn))/60/60/24/1000) + ' days ago');
   return $newProject;
 };
