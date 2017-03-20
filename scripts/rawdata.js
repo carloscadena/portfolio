@@ -16,7 +16,7 @@ var rawData = [
   {
     title: 'Bus Mall',
     url: 'lsjdfasdf',
-    description: '<p>A website for guaging how popular certain items are, so that they can be included in a magazine for buses similar to skymall for planes.</p>',
+    description: '<p>A website for guaging how popular certain items are, so that they can be included in a magazine for buses, similar to skymall for planes.</p>',
     publishedOn: '2000-01-09'
   },
   {
