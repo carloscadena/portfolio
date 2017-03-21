@@ -2,21 +2,27 @@ body {
   text-align: center;
 }
 
-h1 {
-  font-size: 1.5em;
+header {
   display: inline-block;
+  position: fixed;
+  height: 50px;
+  top: 0;
+  left: 0;
+  right: 0;
+  background-color: #EAEEF3;
 }
 
-.header {
-  border-bottom: 3px solid #eeeeee;
-  margin-right: 20%;
-  margin-left: 20%;
-  max-height: 100%;
+h1 {
+  margin-top: 7px !important;
+  padding-left: 5px;
+  float: left;
+  font-size: 1.5em;
 }
 
 img {
+  padding-top: 5px;
   border-radius: 50%;
-  max-height: 100px;
+  height: 100px
 }
 
 ul {
@@ -24,37 +30,22 @@ ul {
   margin-bottom: 1px;
 }
 
-.main-nav {
-  font-size: 1.5em;
-  border-bottom: 3px solid #eeeeee;
-  padding: 5px;
-  margin: 0px;
-  margin-right: 20%;
-  margin-left: 20%;
-}
-
-.main-nav li {
-  display: inline-block;
-  padding-right: 1.6em;
+hr {
+  width: 80%;
 }
 
 a {
   text-decoration: none;
 }
 
-.main-content {
-  border: 1px solid #eeeeee;
-  margin-right: 20%;
-  margin-left: 20%;
-  margin-top: 10px;
-}
 
-@media only screen and (min-width: 600px) {
-    img  {
-      display: block;
-      float: left;
-      margin-left: 5em;
-      max-width: 15%;
-      max-height: 100px;
-    }
+@media only screen and (min-width: 630px) {
+  h1 {
+    font-size: 1.2em;
+  }
+
+  header {
+    margin-right: 10%;
+    margin-left: 10%;
+  }
 }

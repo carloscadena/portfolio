@@ -5,66 +5,70 @@
     <title>Carlos Cadena Portfolio</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/layout.css">
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
 
     <script id="project-template" type="text/x-handlebars-template">
-      <article class="template" data-category="placeholder-category">
-          <header>
-            <a href="{{url}}">{{title}}</a>
-            <div class="description">{{{description}}}</div>
-            <div class="published">
-              published <time>{{daysAgo}}</time>
-            </div>
-          </header>
-          <hr>
-        </article>
-      </section>
+      <article data-category="placeholder-category">
+        <div>
+          <a href="{{url}}">{{title}}</a>
+          <div class="description">{{{description}}}</div>
+          <div class="published">
+            published <time>{{daysAgo}}</time>
+          </div>
+        </div>
+        <hr>
+      </article>
     </script>
 
   </head>
   <body>
-    <div class="header">
-      <img src="img/026_26_2.JPG" alt="">
-      <h1>Carlos Cadena</h1>
-    </div>
-    <div class="main-nav">
-      <ul>
-        <li><a href="#about">Home</a></li>
-        <li><a href="#projects">Portfolio</a></li>
-        <li><a href="#contacts">Contact</a></li>
-      </ul>
-    </div>
+
+    <header>
+      <div class="logo-title">
+        <h1>Carlos Cadena</h1>
+      </div>
+      <div id="nav" class="main-nav">
+        <i id="hamburger" class="material-icons">menu</i>
+        <ul>
+          <li><a href="#about">About</a></li>
+          <li><a href="#projects">Portfolio</a></li>
+          <li><a href="#contacts">Contact</a></li>
+        </ul>
+      </div>
+    </header>
+
     <section class="main-content one" id="about">
+      <img src="img/026_26_2.JPG" alt="">
       <h3>About Me</h3>
-      <p>blah blah blah blah blah</p>
+      <p>bLorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam gravida tortor eu tincidunt volutpat. Cras semper massa neque, sit amet venenatis felis sollicitudin at. Duis vel augue nec purus posuere venenatis. Praesent sit amet convallis risus. Fusce vestibulum tortor in lacinia volutpat. Quisque a vulputate orci. Donec vitae fermentum lacus, eget gravida leo. Nunc venenatis justo ac sollicitudin suscipit. Nulla id fermentum nibh. Suspendisse ornare porttitor elit, in gravida ligula condimentum eget. In bibendum justo id feugiat pharetra. Maecenas facilisis et nunc et interdum. Cras ipsum ex, dignissim in ex sed, accumsan feugiat tortor. Fusce blandit rhoncus sapien quis bibendum. Mauris vitae volutpat felis. Integer nec rutrum justo.</p>
+
+      <p>Nullam tempus accumsan volutpat. Sed semper libero purus, et eleifend nulla scelerisque et. Donec laoreet nisl vel magna eleifend maximus. Donec sollicitudin convallis ultrices. Sed accumsan id nunc convallis placerat. Sed at dignissim metus, et vestibulum est. Praesent tempor purus ut euismod lobortis.</p>
+
+      <p>Sed vel ultricies dui. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Donec venenatis erat a varius dignissim. Mauris volutpat arcu non fringilla gravida. Nam nec quam quam. Pellentesque nec dapibus purus, at bibendum lectus. Vivamus lobortis justo velit. Praesent posuere venenatis lectus at vulputate. Sed eget nisi leo. In hac habitasse platea dictumst. Duis id dolor quam. Donec orci ex, lobortis at congue non, consectetur nec metus. Donec eu venenatis eros. Curabitur ullamcorper ipsum sit amet arcu porta laoreet. Nam vel sapien sed est varius consectetur.</p>
+
+      <p>Quisque at lorem semper, sodales purus eu, laoreet ipsum. Donec mattis suscipit ligula, sit amet pellentesque est dapibus sit amet. Phasellus faucibus tortor sed elementum tristique. Ut ornare tortor id urna cursus, ac pharetra enim facilisis. Cras consequat fringilla est, ac sollicitudin nisi facilisis eget. Aenean sit amet sagittis massa, nec imperdiet velit. Vestibulum ultrices est pulvinar quam egestas, auctor porttitor nibh vestibulum. Ut risus lorem, consequat scelerisque suscipit ut, dictum a nulla. In vestibulum bibendum massa, in accumsan eros.</p>
+
+      <p>Nam eu ipsum metus. Suspendisse elit neque, placerat sed metus eu, lacinia bibendum nisi. Curabitur sodales dolor sed dolor volutpat cursus. Ut efficitur augue in ligula gravida vulputate. Mauris a elit non dui finibus accumsan. Aliquam eu dolor eget elit placerat auctor vitae nec turpis. Duis mi nunc, placerat nec justo quis, posuere pharetra risus. In a odio fringilla tellus pellentesque elementum sed vel nunc. Aliquam erat volutpat. Integer bibendum, ligula ut luctus sodales, nisi erat ultricies felis, ut molestie mauris magna eu lorem. Interdum et malesuada fames ac ante ipsum primis in faucibus. Duis augue augue, vulputate id tincidunt a, consectetur eu libero. Nullam dapibus elementum convallis.</p>
     </section>
 
-      <!-- template -->
-      <section id="projects">
+      <!-- template location -->
+      <section id="projects" class="main-content">
         <h3>My Projects</h3>
-        <!-- <article class="template" data-category="placeholder-category">
-            <header>
-              <a href="">Title</a>
-              <div class="description">Description}</div>
-              <div class="published">
-                published <time>published</time>
-              </div>
-            </header>
-            <a href="#" class="show-more">Show more &rarr;</a>
-            <hr>
-          </article>
-        </section> -->
       </section>
 
-    <section id="contacts">
-      <div class="main-content">
+    <section id="contacts" class="main-content">
+      <div>
         <h3>Previous Jobs</h3>
         <p>blah blah blah blah blah</p>
       </div>
-      <div class="main-content">
+      <div>
         <h3>Education</h3>
         <p>blah blah blah blah blah</p>
       </div>
-      <div class="main-content">
+      <div>
         <h3>My Sites</h3>
         <a href="https://www.facebook.com/carlos.cadena.9022">Facebook</a></br>
         <a href="https://github.com/carloscadena">Github</a></br>
