@@ -17,10 +17,24 @@ Portfolio.prototype.toHtml = function() {
   return template(this);
 };
 
-rawData.forEach(function(ele) {
-  allProjects.push(new Portfolio(ele));
-});
+Portfolio.loadAll = function(rawData){
+  rawData.forEach(function(ele) {
+    allProjects.push(new Portfolio(ele));
+  });
 
-allProjects.forEach(function(a){
-  $('#projects').append(a.toHtml());
-});
+  allProjects.forEach(function(a){
+    $('#projects').append(a.toHtml());
+  });
+}
+
+Portfolio.fetchAll = function(){
+  if(localStorage.rawData){
+    Portfolio.loadAll(JSON.parse(localStorage.rawData));
+  } else {
+    $.getJSON('data/rawdata.json', function(data){
+      localStorage.rawData = JSON.stringify(data);
+      Portfolio.loadAll(data);
+    });
+  }
+
+}
