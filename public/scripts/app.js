@@ -1,6 +1,6 @@
 'use strict';
 
-var allProjects = [];
+const allProjects = [];
 
 function Portfolio (work) {
   this.title = work.title;
@@ -10,7 +10,7 @@ function Portfolio (work) {
 }
 
 Portfolio.prototype.toHtml = function() {
-  var template = Handlebars.compile($('#project-template').text());
+  let template = Handlebars.compile($('#project-template').text());
 
   this.daysAgo = parseInt((new Date() - new Date(this.publishedOn))/60/60/24/1000) + ' days ago';
 
@@ -18,8 +18,8 @@ Portfolio.prototype.toHtml = function() {
 };
 
 Portfolio.loadAll = function(rawData){
-  rawData.forEach(function(ele) {
-    allProjects.push(new Portfolio(ele));
+  allProjects = rawData.map(function(ele) {
+    return new Portfolio(ele);
   });
 
   allProjects.forEach(function(a){
