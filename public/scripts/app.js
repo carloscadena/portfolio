@@ -1,6 +1,6 @@
 'use strict';
 
-const allProjects = [];
+var allProjects = [];
 
 function Portfolio (work) {
   this.title = work.title;
