@@ -33,9 +33,9 @@
       <div id="nav" class="main-nav">
         <i id="hamburger" class="material-icons">menu</i>
         <ul>
-          <li><a href="#about">About</a></li>
-          <li><a href="#projects">Portfolio</a></li>
-          <li><a href="#contacts">Contact</a></li>
+          <li><a href="/">About</a></li>
+          <li><a href="/portfolio">Portfolio</a></li>
+          <li><a href="/contacts">Contact</a></li>
         </ul>
       </div>
     </header>
@@ -75,10 +75,15 @@
         <a href="https://www.linkedin.com/in/carlos-cadena-116866132/">Linked In</a>
       </div>
     </section>
+    <script src="https://cdn.rawgit.com/visionmedia/page.js/master/page.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.0.4/handlebars.js"></script>
     <script src="scripts/projectview.js" type="text/javascript"></script>
     <script src="scripts/app.js" type="text/javascript"></script>
+    <script src="/scripts/controllers/aboutController.js"></script>
+    <script src="/scripts/controllers/portfolioController.js"></script>
+    <script src="/scripts/controllers/contactController.js"></script>
+    <script src="/scripts/controllers/routes.js"></script>
     <script>
       Portfolio.fetchAll();
     </script>
