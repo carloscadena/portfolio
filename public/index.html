@@ -23,6 +23,19 @@
       </article>
     </script>
 
+    <script id="repo-template" type="text/x-handlebars-template">
+      <li>
+        <a href="{{html_url}}" target="_blank"><h3>{{name}}</h3></a>
+        <p>Description: {{description}}</p>
+        <p>Language: {{language}}</p>
+        <p>Created: {{created_at}}</p>
+        <p>Last updated: {{updated_at}}</p>
+        {{#if watchers_count}}
+          <p>{{watchers_count}} watching this repo</p>
+        {{/if}}
+      </li>
+    </script>
+
   </head>
   <body>
 
@@ -57,6 +70,9 @@
       <!-- template location -->
       <section id="projects" class="main-content">
         <h3>My Projects</h3>
+        <ul>
+          <li></li>
+        </ul>
       </section>
 
     <section id="contacts" class="main-content">
@@ -78,11 +94,14 @@
     <script src="https://cdn.rawgit.com/visionmedia/page.js/master/page.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.0.4/handlebars.js"></script>
+    <script src="/scripts/githubToken.js"></script>
     <script src="scripts/projectview.js" type="text/javascript"></script>
     <script src="scripts/app.js" type="text/javascript"></script>
     <script src="/scripts/controllers/aboutController.js"></script>
     <script src="/scripts/controllers/portfolioController.js"></script>
     <script src="/scripts/controllers/contactController.js"></script>
+    <script src="/scripts/repoview.js"></script>
+    <script src="/scripts/repo.js"></script>
     <script src="/scripts/controllers/routes.js"></script>
     <script>
       Portfolio.fetchAll();

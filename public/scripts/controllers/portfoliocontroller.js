@@ -1,12 +1,12 @@
 'use strict';
 
-(function(module){
+(function(module) {
   const portfolioController = {};
 
-  portfolioController.init = function(){
-    $('#about').hide();
-    $('#contacts').hide();
+  portfolioController.index = () => {
     $('#projects').show();
-  }
+    repos.requestRepos(repoView.index);
+  };
+
   module.portfolioController = portfolioController;
 })(window);
